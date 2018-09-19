@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+  <meta name="description" content="金牌成交大师">
+  <meta name="author" content="金牌成交大师">
+  <meta name="keyword" content="金牌成交大师">
+  <link rel="shortcut icon" href="assets/img/favicon.png">
+
+  <title>金牌成交大师</title>
+  
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/js/components/AmazeUI-2.7.2/assets/css/amazeui.min.css" rel="stylesheet">
+  <link href="assets/js/components/AmazeUI-2.7.2/assets/css/amazeui.flat.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/js/components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/js/components/animate.css">
+  <link rel="stylesheet" href="assets/js/components/toastr/toastr.min.css">
+  <script src="assets/js/components/jquery/dist/jquery.min.js"></script>
+  <script src="assets/js/components/toastr/toastr.min.js"></script>
+
+  <script src="assets/js/components/angular/angular.min.js"></script>
+  <script src="assets/js/components/angular-animate/angular-animate.min.js"></script>
+  <script src="assets/js/components/angular-sanitize/angular-sanitize.min.js"></script>
+  <script src="assets/js/components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="assets/js/components/oclazyload/dist/ocLazyLoad.min.js"></script>
+  <script src="assets/js/components/angular-cookies/angular-cookies.min.js"></script>
+  <script src="assets/js/components/angular/angular.min.js"></script>
+  <script src="assets/js/static/locale.resouces.js"></script>
+  <script src="assets/js/static/locale.js"></script>
+
+  <script src="assets/js/boot.js"></script>
+  <script src="assets/js/routes.js"></script>
+  <script src="assets/js/servers.js"></script>
+  <script src="assets/js/directives.js"></script>
+  
+  <style>
+    .list-item {
+      /*line-height: 40px;*/
+      padding: 0 10px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .list-item:hover,
+    .list-item.active {
+      background: #cccccc;
+    }
+
+    .list .list-item:last-child {
+      border-bottom: 0;
+    }
+
+    .seller-content-wrap {
+      width: 1920px;
+      height: 1080px;
+      background-color: #000;
+      overflow: hidden;
+      -webkit-transform-origin: top left;
+      -moz-transform-origin: top left;
+      -o-transform-origin: top left;
+      -ms-transform-origin: top left;
+      transform-origin: top left;
+      -webkit-user-select:none;
+      -moz-user-select:none;
+      -ms-user-select:none;
+      user-select:none;
+    }
+
+    body {
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body class="home-body" ng-controller="config">
+    <div ng-if="env=='development'" style="display:block;position:fixed;left:10px;top:0px;background-color:#fff;z-index:999;">
+    <div ng-repeat="item in vm.menus" ui-sref="{{item.url}}" class="list-item cursor" ng-class="{'active': $state.includes(item.url)}">
+      <a>{{item.name}}</a>
+    </div>
+  </div>
+  <div content-wrap-resize class="seller-content-wrap" ondragstart="return false;" id="seller-content-wrap">
+      <a class="menu" style="display:none;" id="menuid"></a>
+      <div class="mask-box">
+          <a class="close"></a>
+          <div class="mask-content">
+              
+              <div class="mask-item" ng-repeat="item in vm.floatMenus" id="menuStep{{item.stepId}}"  >
+                  <img src="{{item.bg}}"  ui-sref="{{item.url}}"
+                      ng-class="{'active': $state.includes(item.url)}"
+                      >
+                  </img>
+              </div>
+          </div>
+      </div>
+    <ui-view></ui-view>
+  </div>
+</body>
+
+</html>

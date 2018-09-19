@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>downPropDict</key>
+	<dict>
+		<key>VideoPath</key>
+		<string>video</string>
+		<key>Image2</key>
+		<string>image</string>
+		<key>Image1</key>
+		<string>image</string>
+		<key>PreviewImageUrl</key>
+		<string>image</string>
+		<key>ImageUrl</key>
+		<string>image</string>
+	</dict>
+	<key>LocalUrl</key>
+	<string>http://192.168.2.159:81/</string>
+	<key>DevUrl</key>
+	<string>http://sellertest.aggior.com/</string>
+	<key>ProductUrl</key>
+	<string>http://seller.aggior.com/</string>
+</dict>
+</plist>

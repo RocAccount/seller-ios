@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>18</key>
+	<string>matters</string>
+	<key>17</key>
+	<string>payment</string>
+	<key>16</key>
+	<string>promise</string>
+	<key>15</key>
+	<string>custom</string>
+	<key>14</key>
+	<string>setting</string>
+	<key>13</key>
+	<string>product</string>
+	<key>12</key>
+	<string>sample</string>
+	<key>11</key>
+	<string>team</string>
+	<key>10</key>
+	<string>men</string>
+	<key>9</key>
+	<string>weeding</string>
+	<key>8</key>
+	<string>normalweeding</string>
+	<key>7</key>
+	<string>dress</string>
+	<key>6</key>
+	<string>styleRecommend</string>
+	<key>5</key>
+	<string>process</string>
+	<key>4</key>
+	<string>brand</string>
+	<key>3</key>
+	<string>styleDate</string>
+	<key>2</key>
+	<string>mvpack</string>
+	<key>1</key>
+	<string>start</string>
+</dict>
+</plist>
